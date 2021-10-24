@@ -1,0 +1,35 @@
+﻿@model Calc;
+
+
+
+
+<div class="row">
+
+    @using (Html.BeginForm(FormMethod.Post))
+    {
+
+    <div class="form-group">
+        <label for="no1">No 1</label>
+        <input type="text" class="form-control" id="no1" name="no1" value="@(Model.no1)" />
+    </div>
+
+    <div class="form-group">
+        <label for="no2">Numero 2</label>
+        <input type="text" class="form-control" name="no2" value="@(Model.no2)" />
+    </div>
+
+    <div class="form-group">
+    <label for="tot">Resultado</label>
+    <input type="text" class="form-control" id="tot" name="tot" value=" @Model.tot" />
+    </div>
+
+    <button type="submit" class="btn btn-info" id="calc" value="calc" name="c">+</button> 
+
+    <button type="submit" class="btn btn-danger" id="dim" value="dim" name="c">-</button> 
+
+    <button type="submit" class="btn btn-warning" id="mult" value="mult" name="c">*</button> 
+
+    <button type="submit" class="btn btn-light" id="divv" value="divv" name="c">/</button> 
+
+    }
+</div>
